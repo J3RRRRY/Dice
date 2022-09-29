@@ -2,27 +2,30 @@ int sum = 0;
    void setup()
   {
       size(300, 400);
+      Die dicey = new Die(0, 0);
       noLoop();
   }
   void draw()
   {
       background(0);
-      rollDie();
+      dicey.roll();
+      dicey.show();
+      //rollDie();
   }
-  void rollDie() 
-  {
-    sum = 0;
-    for(int y = 0; y < 300; y = y + 100) {
-       for(int x = 0; x < 300; x = x + 100) {
-          Die dicey = new Die(x, y);
-          dicey.roll();
-          dicey.show();
-        }
-     }
-     fill(255);
-     textSize(30);
-     text("Sum of Dice = " + sum, 25, 360);
-  }
+  //void rollDie() 
+  //{
+  //  sum = 0;
+  //  for(int y = 0; y < 300; y = y + 100) {
+  //     for(int x = 0; x < 300; x = x + 100) {
+  //        Die dicey = new Die(x, y);
+  //        dicey.roll();
+  //        dicey.show();
+  //      }
+  //   }
+  //   fill(255);
+  //   textSize(30);
+  //   text("Sum of Dice = " + sum, 25, 360);
+  //}
   void mousePressed()
   {
       redraw();
