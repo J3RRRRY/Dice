@@ -6,7 +6,7 @@ int sum = 0;
   }
   void draw()
   {
-      //background(0);
+      background(0);
       rollDie();
   }
   void rollDie() 
@@ -51,7 +51,7 @@ int sum = 0;
           //your code here
           fill(255);
           rect(dx, dy, 100, 100);
-          //fill(0);
+          fill(0);
           if(dice == 1) {
             ellipse(dx + 50, dy + 50, 25, 25);
           } else if(dice == 2) {
