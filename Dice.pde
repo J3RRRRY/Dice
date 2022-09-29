@@ -49,7 +49,7 @@ int sum = 0;
       void show()
       {
           //your code here
-          fill(255, 255, 255);
+          fill(255);
           rect(dx, dy, 100, 100);
           fill(0);
           if(dice == 1) {
