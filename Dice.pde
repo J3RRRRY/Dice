@@ -1,5 +1,4 @@
 int sum = 0;
-Die dicey = new Die(0, 0);
    void setup()
   {
       size(300, 400);
@@ -8,24 +7,22 @@ Die dicey = new Die(0, 0);
   void draw()
   {
       background(0);
-      dicey.roll();
-      dicey.show();
-      //rollDie();
+      rollDie();
   }
-  //void rollDie() 
-  //{
-  //  sum = 0;
-  //  for(int y = 0; y < 300; y = y + 100) {
-  //     for(int x = 0; x < 300; x = x + 100) {
-  //        Die dicey = new Die(x, y);
-  //        dicey.roll();
-  //        dicey.show();
-  //      }
-  //   }
-  //   fill(255);
-  //   textSize(30);
-  //   text("Sum of Dice = " + sum, 25, 360);
-  //}
+  void rollDie() 
+  {
+    sum = 0;
+    for(int y = 0; y < 300; y = y + 100) {
+       for(int x = 0; x < 300; x = x + 100) {
+          Die dicey = new Die(x, y);
+          dicey.roll();
+          dicey.show();
+        }
+     }
+     fill(255);
+     textSize(30);
+     text("Sum of Dice = " + sum, 25, 360);
+  }
   void mousePressed()
   {
       redraw();
@@ -85,4 +82,27 @@ Die dicey = new Die(0, 0);
           }
       }
   }
+  
+//Die dicey, dicey2, dicey3, dicey4;
+//   void setup()
+//  {
+//      size(400, 400);
+//      dicey = new Die(0, 0);
+//      dicey2 = new Die(100, 0);
+//      dicey3 = new Die(200, 0);
+//      dicey4 = new Die(300, 0);
+//      noLoop();
+//  }
+//  void draw()
+//  {
+//      background(0);
+//      dicey.roll();
+//      dicey.show();
+//      dicey2.roll();
+//      dicey2.show();
+//      dicey3.roll();
+//      dicey3.show();
+//      dicey4.roll();
+//      dicey4.show();
+//  } 
   
