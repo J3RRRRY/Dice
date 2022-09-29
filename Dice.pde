@@ -1,8 +1,8 @@
 int sum = 0;
+Die dicey = new Die(0, 0);
    void setup()
   {
       size(300, 400);
-      Die dicey = new Die(0, 0);
       noLoop();
   }
   void draw()
