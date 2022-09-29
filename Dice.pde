@@ -6,7 +6,7 @@ int sum = 0;
   }
   void draw()
   {
-      background(255);
+      //background(0);
       rollDie();
   }
   void rollDie() 
